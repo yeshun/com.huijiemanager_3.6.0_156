@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pop_layout" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_red_new_share_sms" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/yulan_tongzhi_pengyouquan" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="微信朋友圈" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_red_new_share_wechat" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_v0_9_9_che_fenxiang_zhuti_weixin" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="微信好友" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="14.0sp" android:textColor="@color/text_grey" android:id="@id/btn_red_new_share_cancle" android:background="@drawable/grey_bottom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="取   消" />
+    </LinearLayout>
+</RelativeLayout>

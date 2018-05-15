@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ratingbar="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/btn_background" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_profile" android:background="@drawable/btn_common_white" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0dip" android:textColor="@color/text_dark1c" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.huijiemanager.view.StarBar android:id="@id/starBar" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="8.0dip" ratingbar:starDistance="2.0dip" ratingbar:starSize="12.0dip" ratingbar:starCount="5" ratingbar:starEmpty="@drawable/star_empty" ratingbar:starFill="@drawable/star_full" />
+                <ImageView android:id="@id/iv_zhongan_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/zhongan_logo" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.huijiemanager.view.XCFlowLayout android:id="@id/flowlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="7.0dip" />
+        <View android:id="@id/card_first_line_wire" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_first_line" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/item_type_first" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/tv_first_line_has" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="默认" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_second_line" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/price_type_second" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/tv_second_line_has" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="默认" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_third_line" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/authentication" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/tv_third_line_has" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="默认" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_fouth_line" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/renzheng_icon" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/thumbnailLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="11.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/tv_could_download" android:background="@drawable/home_status_bg" android:layout_width="55.0dip" android:layout_height="33.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/text_grey" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

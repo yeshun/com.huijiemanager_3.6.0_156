@@ -1,0 +1,74 @@
+.class final Lcom/huijiemanager/utils/m$2;
+.super Ljava/lang/Object;
+.source "DatabaseUtils.java"
+
+# interfaces
+.implements Lio/a/f/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/huijiemanager/utils/m;->b(Landroid/content/Context;Lcom/huijiemanager/model/db/b;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Landroid/content/Context;
+
+.field final synthetic b:Lcom/huijiemanager/model/db/b;
+
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;Lcom/huijiemanager/model/db/b;)V
+    .locals 0
+
+    .prologue
+    .line 46
+    iput-object p1, p0, Lcom/huijiemanager/utils/m$2;->a:Landroid/content/Context;
+
+    iput-object p2, p0, Lcom/huijiemanager/utils/m$2;->b:Lcom/huijiemanager/model/db/b;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .prologue
+    .line 49
+    iget-object v0, p0, Lcom/huijiemanager/utils/m$2;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/huijiemanager/utils/l;->a(Landroid/content/Context;)Lcom/huijiemanager/utils/l;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/huijiemanager/utils/l;->a()Lcom/huijiemanager/utils/AppDatabase;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/huijiemanager/utils/AppDatabase;->l()Lcom/huijiemanager/model/dao/c;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/huijiemanager/utils/m$2;->b:Lcom/huijiemanager/model/db/b;
+
+    .line 50
+    invoke-interface {v0, v1}, Lcom/huijiemanager/model/dao/c;->a(Lcom/huijiemanager/model/db/b;)V
+
+    .line 51
+    return-void
+.end method

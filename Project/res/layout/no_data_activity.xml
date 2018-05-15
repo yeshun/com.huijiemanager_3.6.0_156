@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_no_data" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:src="@drawable/order_nodata" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_dark" android:gravity="center" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="290.0dip" android:text="空空如也，您还没有客户哦～" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/tv_remind" android:background="@drawable/bg_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="321.0dip" android:text="立即去抢客户" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

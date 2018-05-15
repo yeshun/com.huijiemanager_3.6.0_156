@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/all_titles" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="@color/text_dark1c" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="消息" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_top_loc_hint" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/text_white" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_dark" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="接受通知，不错过福利与聊天消息哦" />
+        </LinearLayout>
+        <View android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/puple" android:gravity="center" android:id="@id/btn_off_loc_hint" android:background="@drawable/to_config_loc" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="14.0dip" android:scaleType="centerCrop" android:text="开启" />
+    </LinearLayout>
+    <View android:id="@id/tag" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_notice" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="59.0dip">
+        <RelativeLayout android:id="@id/rl_avatar_container" android:layout_width="59.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/iv_notic_avatar" android:padding="5.0dip" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_notice" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:text="公告通知" android:layout_toRightOf="@id/rl_avatar_container" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_unread_notice_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="2.0dip" android:text="7" android:layout_toRightOf="@id/tv_name" />
+        <ImageView android:id="@id/tv_msg_state" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="7.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/rl_avatar_container" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/tv_public_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="14.0dip" android:singleLine="true" android:layout_toRightOf="@id/rl_avatar_container" android:layout_below="@id/tv_name" />
+        <View android:id="@id/v_line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginLeft="65.0dip" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/attestation_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_system_notice" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="59.0dip">
+        <RelativeLayout android:id="@id/rl_avatar_system" android:layout_width="59.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/iv_avatar" android:padding="5.0dip" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_system_message" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:id="@id/tv_system_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:text="用户消息" android:layout_toRightOf="@id/rl_avatar_system" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/tv_user_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="14.0dip" android:singleLine="true" android:layout_toRightOf="@id/rl_avatar_system" android:layout_below="@id/tv_system_name" />
+        <ImageView android:id="@id/tv_system_msg_state" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="7.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/rl_avatar_system" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/attestation_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <fragment android:name="io.rong.imkit.fragment.ConversationListFragment" android:id="@id/conversationlist" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

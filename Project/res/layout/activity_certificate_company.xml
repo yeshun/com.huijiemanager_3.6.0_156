@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/white_round" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="34.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/search" />
+            <com.huijiemanager.view.ClearEditText android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:textColorHint="@color/ccc" android:id="@id/edit_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="请输入公司名称" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_dark1c" android:id="@id/txt_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="取消" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/tv_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="15.0dip" android:text="输入公司名称的关键字可自动匹配搜索结果" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/tv_company_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:lineSpacingMultiplier="1.3" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="15.0dip" android:text="附近的信贷机构" />
+    <ListView android:id="@id/lv_nearby_manager" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:divider="@null" android:dividerHeight="0.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_lable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/blue" android:gravity="center" android:id="@id/txt_add" android:background="@drawable/white_round" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="15.0dip" android:text="没找到？点击使用输入的公司名称" />
+</LinearLayout>

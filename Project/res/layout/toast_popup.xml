@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/toast_popup_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/toast_popup_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="哈哈哈哈哈哈" />
+    <ImageView android:id="@id/toast_popup_iv" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="2.0dip" />
+</LinearLayout>

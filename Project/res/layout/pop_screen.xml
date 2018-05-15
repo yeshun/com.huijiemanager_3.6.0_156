@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pop_rl" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" />
+    <RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="320.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ListView android:id="@id/list_item" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="51.0dip" android:divider="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_alignParentBottom="true">
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:textColor="#ff14a9f8" android:gravity="center" android:id="@id/reset" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="重置" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/finish" android:background="@color/blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="完成" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

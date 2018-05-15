@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/refresh" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/select_push_cities" android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="城市：" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_red" android:ellipsize="end" android:gravity="right" android:id="@id/push_cities" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="杭州" android:maxLines="1" android:ems="10" android:layout_toLeftOf="@id/push_cities_corner" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/push_cities_corner" android:background="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <Button android:textSize="12.0sp" android:textColor="@color/text_white" android:id="@id/square_push_off" android:background="@color/puple" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="12.0dip" android:text="关闭推送" />
+            <Button android:textSize="12.0sp" android:textColor="@color/text_white" android:id="@id/square_push_on" android:background="@color/puple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="12.0dip" android:text="开启推送" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/puple" android:gravity="left" android:id="@id/push_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="请到系统设置开启消息通知，才能收到订单提醒 >" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="@color/text_dark" android:id="@id/tv_moneys" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="35.0dip" android:text="惠借币：" />
+            <TextView android:textSize="40.0dip" android:textColor="#ff14a9f8" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/tv_moneys" android:layout_alignBottom="@id/tv_moneys" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="41.0dip">
+            <TextView android:textColor="@color/text_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="信贷经理特权" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="127.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/money_normal" />
+                <TextView android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="普通订单抢单" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/money_nice" />
+                <TextView android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="优质订单抢单" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/money_yellow" />
+                <TextView android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="订单买断特权" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.huijiemanager.view.MyListView android:id="@id/lv_pay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" />
+    </LinearLayout>
+</ScrollView>

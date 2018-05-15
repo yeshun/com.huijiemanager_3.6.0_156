@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/text_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.299988dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_dark" android:gravity="center_vertical" android:id="@id/tv_manger_organization" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <View android:id="@id/view_line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    </LinearLayout>
+</LinearLayout>

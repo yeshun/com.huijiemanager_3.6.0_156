@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/web_frame" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/view_actionbar" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip">
+            <ImageView android:background="@drawable/back_all" android:layout_width="16.0dip" android:layout_height="48.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/text_dark1c" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_dark" android:gravity="center|right" android:id="@id/txt_right_nav" android:paddingRight="8.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView android:id="@id/wv_agreement" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptrMode="pullDownFromTop" />
+    <include layout="@layout/item_web_no_data" />
+</LinearLayout>

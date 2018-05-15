@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:gravity="center_vertical" android:id="@id/txt_first_title" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="15.0dip" android:text="上传本人身份证照片" />
+            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_person" android:background="@color/white_background" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:gravity="center_vertical" android:id="@id/txt_second_title" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="15.0dip" android:text="上传公司相关照片" />
+            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_group" android:background="@color/white_background" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:gravity="center_vertical" android:id="@id/txt_third_title" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="15.0dip" android:text="上传其他资质照片" />
+            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_other" android:background="@color/white_background" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="提示:\n1.上传信息越完整，认证通过率越高\n2.您上传的信息仅用于审核，我们将为您严格保密" android:lineSpacingMultiplier="1.2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <io.rong.imkit.plugin.image.HackyViewPager android:scrollbarSize="0.0dip" android:layout_gravity="center" android:id="@id/rc_view_pager" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rc_emotion_tab_bar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/rc_emoticon_tab_add" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="36.0dip" android:src="@drawable/rc_ext_tab_add" android:scaleType="center" />
+                <HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/rc_emotion_scroll_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View android:background="@color/rc_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/rc_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/refresh" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_top_hint" android:background="@color/line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <LinearLayout android:orientation="horizontal" android:background="@color/line" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/text_dark" android:id="@id/tv_hint" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" />
+                </LinearLayout>
+                <View android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/btn_off_hint" android:background="@drawable/circle_cancel" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/circle_cancel_button_pic" android:scaleType="centerCrop" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_member_card_zone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/rl_member_card" android:background="@drawable/manager_member_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+                    <TextView android:textSize="25.0sp" android:textColor="@color/text_white" android:id="@id/member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="12.0dip" android:text="" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/member_service_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/text_white" android:gravity="left" android:id="@id/member_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/text_white" android:gravity="left" android:id="@id/member_expired_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/text_white" android:gravity="left" android:id="@id/today_high_quality_order" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/text_white" android:gravity="left" android:id="@id/today_ordinary_order" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="" />
+                    </LinearLayout>
+                    <TextView android:textSize="10.0sp" android:textColor="@color/text_white" android:id="@id/member_service_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/member_service_zone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="12.0dip">
+                    <View android:background="#ffd8d8d8" android:layout_width="1.0dip" android:layout_height="11.0dip" android:layout_marginLeft="14.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="购买服务" android:layout_weight="1.0" />
+                    <View android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/puple" android:id="@id/member_service_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="服务说明" />
+                </LinearLayout>
+                <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/lv_member_service_list" android:background="@color/grey_backgroud" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="300.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/line" android:dividerHeight="0.5dip" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

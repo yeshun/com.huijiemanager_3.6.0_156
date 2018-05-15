@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="13.0dip" android:textColor="@color/text_dark1c" android:textColorHint="@color/grey_b" android:gravity="center" android:id="@id/ed_first" android:background="@drawable/item_normal_bac" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="90.0dip" android:layout_height="32.0sp" android:hint="最低金额" android:singleLine="true" android:inputType="numberDecimal" />
+            <View android:layout_gravity="center_vertical" android:background="@color/text_grey" android:layout_width="14.0dip" android:layout_height="0.5dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <EditText android:textSize="13.0dip" android:textColor="@color/text_dark1c" android:textColorHint="@color/grey_b" android:gravity="center" android:id="@id/ed_second" android:background="@drawable/item_normal_bac" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="90.0dip" android:layout_height="32.0sp" android:hint="最高金额" android:singleLine="true" android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_dark1c" android:id="@id/remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="还款提醒" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/grey_b" android:id="@id/tv_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="还款日前3天上午10点,您会收到提醒哦" android:layout_below="@id/remind" />
+        <ToggleButton android:id="@id/mTogBtn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-20.0dip" android:button="@drawable/switch_btn" android:textOn="" android:textOff="" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

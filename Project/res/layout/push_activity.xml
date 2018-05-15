@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/select_push_city" android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="选择城市" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/push_cities_corner" android:background="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:ellipsize="end" android:gravity="right" android:id="@id/push_cities" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ems="10" android:layout_toLeftOf="@id/push_cities_corner" android:layout_alignTop="@id/push_cities_corner" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:text="订单消息推送" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/mTogBtn" android:padding="10.0dip" android:layout_width="60.0dip" android:layout_height="45.0dip" android:src="@drawable/switch_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:id="@id/line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/select_push_time" android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff444444" android:id="@id/set_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="请选择接收时段" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/push_time_corner" android:background="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:ellipsize="end" android:gravity="right" android:id="@id/push_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ems="10" android:layout_toLeftOf="@id/push_time_corner" android:layout_alignTop="@id/push_time_corner" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:text="推送订单类型" />
+        <GridView android:id="@id/gv_item_type" android:background="@color/text_white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:horizontalSpacing="15.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/push_time_show" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" />
+    <RelativeLayout android:id="@id/rl_push" android:background="@drawable/set_push_img" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="373.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_push_finish" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/finishs" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/text_white" android:gravity="center" android:id="@id/tv_push_start" android:background="@drawable/start_push" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginBottom="30.0dip" android:text="立即开启" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/push_time_shows" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:id="@id/push_time_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="取消" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/push_time_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="190.0dip">
+            <com.huijiemanager.view.QNumberPicker android:gravity="center" android:id="@id/startpicker" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.huijiemanager.view.QNumberPicker android:gravity="center" android:id="@id/endicker" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

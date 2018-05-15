@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_line" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/rl_set_order" android:background="@color/text_white" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#ffffb745" android:gravity="center_vertical" android:id="@id/tv_set_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击立即设置自己的抢单习惯" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_set_order" android:padding="5.0dip" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/rob_set_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

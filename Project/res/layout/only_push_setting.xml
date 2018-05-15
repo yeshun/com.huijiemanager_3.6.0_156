@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/all_on_off" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="推送消息总开关" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/switch_corner" android:background="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:ellipsize="end" android:gravity="right" android:id="@id/on_off_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未开启" android:maxLines="1" android:ems="10" android:layout_toLeftOf="@id/switch_corner" android:layout_alignTop="@id/switch_corner" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/official_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="开启后，您将会收到来自信贷家的推送通知。您可以在“设置”功能中找到应用程序“信贷家”开启通知。" />
+</LinearLayout>

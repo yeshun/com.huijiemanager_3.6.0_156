@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/item_home_list_iv_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/default_plat_logo" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/item_home_list_iv_icon">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_dark1c" android:id="@id/tv_company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="10" />
+                <ImageView android:id="@id/iv_strengths" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+                <ImageView android:id="@id/iv_strength" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/tv_applacation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请人数" />
+                <TextView android:textColor="@color/home_list_lend" android:id="@id/tv_applation_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:id="@id/tv_interest_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+                <TextView android:textColor="@color/home_list_lend" android:id="@id/tv_interest_rate_much" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="成功率" />
+                <RatingBar android:id="@id/rb_star" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="@style/coach_ratingbar_star" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:background="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

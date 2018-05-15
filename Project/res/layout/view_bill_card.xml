@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tag" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/grey_b" android:id="@id/tv_tag" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2015-08-08" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_group" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="66.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_profile" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_avatar" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_noheader" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/text_dark1c" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="张三" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/grey_b" android:gravity="center_vertical" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="\ 15305713570" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/grey_b" android:gravity="center_vertical" android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 15305713570" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.8" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/red_money" android:gravity="center_vertical" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="15305" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

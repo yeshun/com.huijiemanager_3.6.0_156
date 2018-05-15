@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_zhima_score" android:background="@drawable/btn_common_white" android:padding="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:id="@id/tv_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="芝麻信用分" style="@style/set_text" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:textColorHint="@color/text_red" android:ellipsize="end" android:id="@id/tv_content" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:hint="输入芝麻分" android:singleLine="true" android:maxLength="20" android:inputType="number" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:textColorHint="@color/text_red" android:ellipsize="end" android:id="@id/tv_other_score" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:hint="输入芝麻分" android:singleLine="true" android:inputType="number" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_update_time" android:background="@drawable/btn_common_white" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="更新时间:" style="@style/set_text" />
+            <TextView android:id="@id/tv_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_dark1c" android:id="@id/tv_descTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_grey" android:id="@id/tv_descBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" />
+        <GridView android:id="@id/gv_noScrollgridview" android:scrollbars="none" android:layout_width="320.0dip" android:layout_height="320.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:horizontalSpacing="3.0dip" android:verticalSpacing="5.0dip" android:numColumns="3" />
+    </LinearLayout>
+    <Button android:textSize="14.0dip" android:textColor="@color/text_white" android:id="@id/btn_send_image" android:background="@drawable/btn_normal_selector" android:padding="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:text="提交" android:layout_alignParentBottom="true" />
+</RelativeLayout>

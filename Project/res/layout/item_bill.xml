@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_common_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_bill_show_date" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:gravity="center_vertical" android:id="@id/item_bill_tv_date" android:background="@color/grey_backgroud" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+        <ImageView android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_common_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_dark1c" android:id="@id/item_bill_tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:id="@id/item_bill_tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_dark1c" android:gravity="center|right" android:id="@id/item_bill_tv_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/text_hint" android:layout_gravity="center_vertical" android:id="@id/item_bill_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/green_money" android:gravity="center|right" android:id="@id/item_bill_tv_money" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

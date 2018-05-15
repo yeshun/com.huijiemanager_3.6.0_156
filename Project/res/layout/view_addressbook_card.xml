@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+        <TextView android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="涨鹏" />
+        <TextView android:id="@id/tv_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 153067513435" />
+        <CheckBox android:id="@id/cb_address_book" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

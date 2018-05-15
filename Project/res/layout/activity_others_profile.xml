@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+            <com.huijiemanager.view.XCRoundRectImageView android:id="@id/iv_avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/text_dark1c" android:id="@id/remark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_grey" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/text_white" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" style="@style/set_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_hint" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="" android:maxEms="8" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/others_profile_layout_certify" android:background="@drawable/btn_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="实名认证" style="@style/set_text" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_hint" android:id="@id/others_profile_tv_certify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_zhima" android:background="@drawable/btn_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="芝麻信用" style="@style/set_text" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_hint" android:id="@id/tv_zhima" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_manager" android:background="@color/text_white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信贷经理认证" style="@style/set_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_hint" android:id="@id/tv_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_1_shezhi_zhiuti_jiantou" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_remark" android:background="@drawable/btn_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置备注名" style="@style/set_text" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/others_profile_phone" android:background="@drawable/btn_background" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定手机" style="@style/set_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_hint" android:id="@id/tv_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/others_profile_layout_credit" android:background="@drawable/btn_background" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TA的信用" style="@style/set_text" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_1_shezhi_zhiuti_jiantou" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_blacklist" android:background="@drawable/btn_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入黑名单" style="@style/set_text" />
+            <ToggleButton android:id="@id/mTogBtn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-30.0dip" android:button="@drawable/switch_btn" android:textOn="" android:textOff="" android:text="" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <Button android:textSize="@dimen/text_edit" android:textColor="@color/white_background" android:id="@id/btn_add_friends" android:background="#ff14a9f8" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" />
+    </LinearLayout>
+</RelativeLayout>

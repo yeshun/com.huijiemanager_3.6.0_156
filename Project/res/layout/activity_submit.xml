@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/apply_right" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="恭喜您,已成功提交认证信息" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/contack_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:text="我们将在一个工作日内进行审核,请保持通讯畅通,如有问题请联系客服。" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="您可以稍后在我的-信贷经理认证查看进度。" />
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/commit_button" android:background="#ff14a9f8" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="15.0dip" android:text="确定" android:layout_alignParentBottom="true" />
+</RelativeLayout>

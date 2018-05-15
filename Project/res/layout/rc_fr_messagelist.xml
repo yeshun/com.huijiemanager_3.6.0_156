@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rc_content" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.rong.imkit.widget.AutoRefreshListView android:id="@id/rc_list" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    <Button android:textSize="14.0sp" android:textColor="#ff0195ff" android:gravity="center|left" android:layout_gravity="right" android:id="@id/rc_unread_message_count" android:background="@drawable/rc_unread_message_count" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+    <RelativeLayout android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip">
+        <ImageButton android:gravity="center" android:id="@id/rc_new_message_count" android:background="@drawable/rc_conversation_newmsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rc_new_message_number" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/rc_new_message_count" android:layout_alignTop="@id/rc_new_message_count" android:layout_alignRight="@id/rc_new_message_count" android:layout_alignBottom="@id/rc_new_message_count" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/real_time_location_bar" android:background="#cc69b8ee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/rc_rt_location_bar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/real_time_location_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/rc_rt_location_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

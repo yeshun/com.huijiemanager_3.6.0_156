@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white_background" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/text_grey" android:id="@id/txt_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:lineSpacingMultiplier="1.2" />
+    <CheckBox android:textSize="13.0dip" android:textColor="#ff14a9f8" android:id="@id/cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:checked="false" android:button="@drawable/dialog_phone" android:text="下次不再提醒" android:drawablePadding="5.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/know" android:background="#ff14a9f8" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="知道啦" />
+</LinearLayout>

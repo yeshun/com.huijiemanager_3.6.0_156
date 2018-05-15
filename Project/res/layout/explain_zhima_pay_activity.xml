@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/text_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/zhima_explain" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="芝麻信用分认证后将获得征信认证图标。" android:drawableLeft="@drawable/icon_zhima_logo" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="芝麻信用分认证将有助于提高信贷借款成功率。 " android:drawableLeft="@drawable/icon_zhima_gou" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="认证后发布信息将优先展示在借条广场。" android:drawableLeft="@drawable/icon_zhima_logo3" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+    <Button android:textSize="14.0sp" android:textColor="@color/white_background" android:id="@id/btn_alipay" android:background="@drawable/dakuan" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="14.0dip" android:text="下一步,付费认证" />
+</LinearLayout>

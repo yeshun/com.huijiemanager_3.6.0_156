@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.huijiemanager" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <permission android:name="com.huijiemanager.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.huijiemanager.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:name="com.huijiemanager.app.ApplicationController" android:supportsRtl="true" android:theme="@style/AppBaseTheme">
+        <meta-data android:name="RONG_CLOUD_APP_KEY" android:value="0vnjpoad0qi2z"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.huijiemanager.service.GaodeLocationService">
+            <intent-filter>
+                <action android:name="com.huijiemanager.GaodeLocationService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.huijiemanager.service.AddressBookChangerService">
+            <intent-filter>
+                <action android:name="com.huijiemanager.AddressBookChangerService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="XG2hvCliB9pTfbT4pDwmjOm0"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="57e0ff02a776c25974639d00ee072330"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="58204ef5c62dca03600008e5"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="1d7780c9922262b7bf9ab45073ba7982"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="yingyongbao"/>
+        <meta-data android:name="SENSORS_ANALYTICS_UTM_SOURCE" android:value="yingyongbao"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.AndroidId" android:value="true"/>
+        <meta-data android:name="EASEMOB_APPKEY" android:value="iou#ioupro"/>
+        <meta-data android:name="TA_APPKEY" android:value="Aqc1104848900"/>
+        <meta-data android:name="InstallChannel" android:value="yingyongbao"/>
+        <meta-data android:name="GFD_APPKEY" android:value="04d2259cccd12808"/>
+        <meta-data android:name="GFD_APPID" android:value="04d2259cccd12808"/>
+        <activity android:label="@string/app_name" android:name="com.huijiemanager.ui.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.megvii.zhimasdk.MGLivenessDetectActivity"/>
+        <activity android:name="com.megvii.zhimasdk.MGLoadActivity"/>
+        <activity android:name="com.megvii.zhimasdk.MGWebViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.huijiemanager.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.huijiemanager.wxapi.WXPayEntryActivity"/>
+        <activity android:label="@string/title_activity_setting" android:name="com.huijiemanager.ui.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_mobile" android:name="com.huijiemanager.ui.activity.MobileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.DialogActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyle"/>
+        <activity android:name="com.huijiemanager.ui.activity.DialogPhoneActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyle"/>
+        <activity android:name="com.huijiemanager.ui.activity.BorrowMoneyActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyle"/>
+        <activity android:label="我的信贷经理" android:name="com.huijiemanager.ui.activity.MyCreditManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_about" android:name="com.huijiemanager.ui.activity.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_password" android:name="com.huijiemanager.ui.activity.PasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.MessageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CapacityPushActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PushDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.NotSkipurlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateCompanyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateCompanyDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huijiemanager.ui.activity.MydiscountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.huijiemanager.ui.activity.CommitOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PushSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PushActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.OrderSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.OrderTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.OnlyPushSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CustomerFollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.VerifyActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyle"/>
+        <activity android:name="com.huijiemanager.ui.activity.DialogLoginActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyle"/>
+        <activity android:name="com.huijiemanager.ui.activity.AddTrackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.huijiemanager.ui.activity.ModificationPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.IouRecommandListAce" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.FillDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PassWordsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.WashOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ChangePhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.OldPhoneChangeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PhoneChangeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_my_profile_1_0_0_" android:name="com.huijiemanager.ui.activity.MyProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_others_profile" android:name="com.huijiemanager.ui.activity.OthersProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CodeScanActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huijiemanager.ui.activity.SubmitCreditManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huijiemanager.ui.activity.TailorIconActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.bugtags.library.BugtagsActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:name="com.bugtags.library.BugtagsReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.bugtags.library.BugtagsService"/>
+        <activity android:name="com.huijiemanager.ui.activity.IouRecommandListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.RecommandPlatFormActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CreditImageAc" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ProfileInforActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PhotoAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ImageGridActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.PhotoBrowseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.SquareMapActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huijiemanager.ui.activity.PublicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.SaveNickNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ImageBrowseActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_little_help" android:name="com.huijiemanager.ui.activity.LittleHelpActivity"/>
+        <activity android:name="com.huijiemanager.ui.activity.AlipayResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.SelectCityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.SelectMultipleCityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.SquareConfigPushActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huijiemanager.ui.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_little_help" android:name="com.huijiemanager.ui.activity.ZhiMaImageCreditActivity"/>
+        <activity android:name="com.huijiemanager.ui.activity.GetVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.SetForgetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_little_help" android:name="com.huijiemanager.ui.activity.OtherInforDetailActivity"/>
+        <activity android:label="@string/title_activity_little_help" android:name="com.huijiemanager.ui.activity.ExplainZhiMaToPayActivity"/>
+        <activity android:label="芝麻信用" android:name="com.android.moblie.zmxy.antgroup.creditsdk.app.SDKActivity" android:screenOrientation="portrait"/>
+        <activity android:label="信贷经理会员服务" android:name="com.huijiemanager.ui.activity.LoanManagerMemberServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:label="信贷经理我的订单页面" android:name="com.huijiemanager.ui.activity.LoanManagerMyOrdersActivity" android:screenOrientation="portrait"/>
+        <activity android:label="用户认证页面" android:name="com.huijiemanager.ui.activity.User_Certification_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.TradeMoneyActivity" android:screenOrientation="portrait"/>
+        <activity android:label="会员服务购买记录" android:name="com.huijiemanager.ui.activity.MemberServiceHistoryPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="活动弹出框页面" android:name="com.huijiemanager.ui.activity.PicAdverActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.huijiemanager.ui.activity.PayChannelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.RouterActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="xindaijia"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huijiemanager.ui.activity.HuiJieMoneyActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.huijiemanager.service.Notificationreceiver">
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+                <action android:name="notification_clicked"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.huijiemanager.ui.activity.AddRemarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ConversationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.huijiemanager" android:pathPrefix="/conversation/" android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huijiemanager.ui.activity.ConversationListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.huijiemanager" android:pathPrefix="/conversationlist" android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huijiemanager.ui.activity.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huijiemanager.ui.activity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.huijiemanager.ui.activity.CustomerFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <receiver android:exported="true" android:name="com.huijiemanager.view.DemoNotificationReceiver">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:name="com.umeng.socialize.editorpage.ShareActivity" android:theme="@style/Theme.UMDefault"/>
+        <activity android:launchMode="singleTask" android:name="com.umeng.qq.tencent.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1105748939"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.umeng.qq.tencent.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateModifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.huijiemanager.ui.activity.SelectSingleCityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.CertificateFaceSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ImagesReviewActivity" android:screenOrientation="portrait" android:theme="@style/TransparentScreen"/>
+        <activity android:name="com.huijiemanager.ui.activity.ClientAlarmActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ClientAllFollowUpRecordsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huijiemanager.ui.activity.ClientAddFollowUpRecordsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.huijiemanager.ui.activity.ClientDetailActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="io.rong.push.platform.MiMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.huijiemanager.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:name="com.sensorsdata.analytics.android.sdk.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.huijiemanager"/>
+        <activity android:name="io.rong.imkit.plugin.location.AMapLocationActivity"/>
+        <activity android:name="io.rong.imkit.plugin.location.AMapPreviewActivity"/>
+        <activity android:name="io.rong.imkit.plugin.location.AMapRealTimeActivity"/>
+        <activity android:name="io.rong.imkit.plugin.image.PictureSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="io.rong.imkit.plugin.image.PicturePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="io.rong.imkit.tools.RongWebviewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="io.rong.imkit.intent.action.webview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.rong.imkit.widget.provider.TakingPicturesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="io.rong.imkit.activity.PicturePagerActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="io.rong.imkit.intent.action.picturepagerview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.rong.imkit.mention.MemberMentionedActivity" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="io.rong.imkit.activity.FileManagerActivity"/>
+        <activity android:name="io.rong.imkit.activity.FileListActivity"/>
+        <activity android:name="io.rong.imkit.activity.FilePreviewActivity"/>
+        <service android:exported="true" android:name="com.taobao.accs.ChannelService" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.taobao.accs.data.MsgDistributeService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.taobao.accs.EventReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.taobao.accs.ServiceReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.taobao.accs.internal.AccsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":channel"/>
+        <service android:name="com.taobao.accs.ChannelService$KernelService" android:process=":channel"/>
+        <service android:exported="true" android:name="org.android.agoo.accs.AgooService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.umeng.message.UmengIntentService" android:process=":channel">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.umeng.message.XiaomiIntentService" android:process=":channel">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.taobao.agoo.AgooCommondReceiver" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.huijiemanager.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.umeng.message.UmengMessageIntentReceiverService" android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.umeng.message.NotificationProxyBroadcastReceiver"/>
+        <service android:exported="false" android:name="com.umeng.message.UmengMessageCallbackHandlerService">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.enablecallback.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.disablecallback.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.sendmessage.action"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.umeng.message.UmengDownloadResourceService"/>
+        <provider android:authorities="com.huijiemanager.umeng.message" android:exported="false" android:name="com.umeng.message.provider.MessageProvider">
+            <grant-uri-permission android:pathPattern=".*"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.sobot.chat.activity.SobotChatActivity" android:screenOrientation="portrait" android:theme="@style/sobot_AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.sobot.chat.activity.SobotPhotoActivity" android:screenOrientation="portrait" android:theme="@style/sobot_AppTheme"/>
+        <activity android:name="com.sobot.chat.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/sobot_AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.sobot.chat.activity.SobotSkillGroupActivity" android:theme="@style/sobot_dialog_skill"/>
+        <activity android:name="com.sobot.chat.activity.SobotPostMsgActivity" android:screenOrientation="portrait" android:theme="@style/sobot_AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.sobot.chat.activity.SobotPhotoListActivity" android:screenOrientation="portrait" android:theme="@style/sobot_AppTheme"/>
+        <service android:exported="false" android:label="SobotChatTCPServer" android:name="com.sobot.chat.core.channel.SobotTCPServer"/>
+        <service android:name="com.sobot.chat.server.SobotSessionServer"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <service android:exported="true" android:name="io.rong.imlib.ipc.RongService" android:process=":ipc"/>
+        <service android:exported="true" android:name="io.rong.imlib.ReConnectService"/>
+        <receiver android:exported="true" android:name="io.rong.imlib.ConnectChangeReceiver"/>
+        <receiver android:name="io.rong.imlib.HeartbeatReceiver" android:process=":ipc"/>
+        <service android:exported="false" android:name="io.rong.push.core.PushRegistrationService"/>
+        <service android:exported="true" android:name="io.rong.push.core.MessageHandleService"/>
+        <service android:exported="true" android:name="io.rong.push.PushService" android:process="io.rong.push"/>
+        <receiver android:name="io.rong.push.PushReceiver" android:process="io.rong.push">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.action.HEART_BEAT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

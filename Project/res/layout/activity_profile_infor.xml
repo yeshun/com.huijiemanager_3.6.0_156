@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_credit_info_zone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ListView android:id="@id/lv_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/line" android:dividerHeight="0.5dip" android:smoothScrollbar="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_progress_button_zone" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/progressBar" android:background="@drawable/aa_button_gray_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_selector" style="?android:attr/progressBarStyleHorizontal" />
+            <Button android:textColor="@color/text_white" android:id="@id/btn_create_iou" android:background="@drawable/btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

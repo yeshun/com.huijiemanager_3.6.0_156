@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="300.0dip" android:layout_height="200.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_dark1c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="这样开场，交易成功率提升70%哦!" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="        您好，我是来自信贷家的信贷经理。" />
+        <CheckBox android:textSize="13.0dip" android:textColor="#ff14a9f8" android:id="@id/cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:checked="false" android:button="@drawable/dialog_phone" android:text="下次不再提醒" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/know" android:background="#ff14a9f8" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="知道啦" />
+    </LinearLayout>
+</LinearLayout>

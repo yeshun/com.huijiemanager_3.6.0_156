@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/iv_activity_pic" android:layout_width="300.0dip" android:layout_height="400.0dip" android:layout_centerInParent="true" android:overScrollMode="never" />
+    <com.viewpagerindicator.CirclePageIndicator android:id="@id/titles" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/iv_activity_pic" />
+    <ImageView android:id="@id/iv_close_pic_adver" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="45.0dip" android:src="@drawable/close_pic_adver" android:layout_below="@id/iv_activity_pic" android:layout_centerHorizontal="true" />
+</RelativeLayout>

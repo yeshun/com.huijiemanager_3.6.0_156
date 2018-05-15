@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading" android:background="@drawable/dialog_background" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="290.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/custom_image" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    <FrameLayout android:id="@id/error_frame" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginTop="5.0dip">
+        <View android:background="@drawable/error_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/error_x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/error_center_x" android:scaleType="center" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/success_frame" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginTop="5.0dip">
+        <View android:background="@drawable/success_bow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="right" android:id="@id/mask_right" android:background="@android:color/white" android:layout_width="35.0dip" android:layout_height="80.0dip" android:layout_marginTop="-13.0dip" />
+        <View android:layout_gravity="left" android:id="@id/mask_left" android:background="@android:color/white" android:layout_width="21.0dip" android:layout_height="60.0dip" android:layout_marginLeft="-3.0dip" />
+        <View android:background="@drawable/success_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.huijiemanager.view.SweetAlert.SuccessTickView android:id="@id/success_tick" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/warning_frame" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginTop="5.0dip">
+        <View android:background="@drawable/warning_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/warning_sigh" android:scaleType="center" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/progressBar1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/progressbar_style" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff575757" android:gravity="center_vertical" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/dialog_default_title" android:lineSpacingMultiplier="1.2" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff797979" android:id="@id/content_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_button_h" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/gray_button_background" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/dialog_cancel" style="@style/dialog_blue_button" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/button_text_color" android:gravity="center" android:id="@id/confirm_button" android:background="@drawable/blue_button_background" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/dialog_ok" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_button_v" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/button_divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/confirm_tv_v" android:paddingTop="11.0dip" android:paddingBottom="11.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_ok" />
+        <View android:background="@color/button_divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/cancel_tv_v" android:paddingTop="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_cancel" />
+    </LinearLayout>
+</LinearLayout>

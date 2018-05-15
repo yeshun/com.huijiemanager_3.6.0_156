@@ -1,0 +1,31 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: project.apk
+compressionType: false
+doNotCompress:
+- arsc
+- res/raw/livenessmodel
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '18'
+  targetSdkVersion: '22'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  miui_push_version: '8'
+  push_version: '8'
+  com/readystatesoftware/viewbadger/BadgeView.java: '8'
+  main/AndroidManifest.xml: '8'
+  main/res/values/strings.xml: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/apache/http/entity/mime/version.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.2
+versionInfo:
+  versionCode: '156'
+  versionName: 3.6.0

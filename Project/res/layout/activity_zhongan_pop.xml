@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/pop_zhongan_bac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0dip" android:textColor="#ff030303" android:id="@id/tv_zhongan_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/zhongan_success" android:id="@id/tv_zhongan_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawableLeft="@drawable/zhongan_logo" android:drawablePadding="6.0dip" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff030303" android:id="@id/tv_zhongan_desc" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" />
+        <View android:background="#ff4d4d4d" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginTop="25.0dip" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/blue" android:gravity="center" android:id="@id/tv_zhongan_finish" android:layout_width="fill_parent" android:layout_height="41.0dip" android:text="朕知道了" />
+    </LinearLayout>
+</LinearLayout>

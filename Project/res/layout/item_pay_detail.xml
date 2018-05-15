@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_common_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="6.0dip">
+        <CheckBox android:id="@id/pay_detail_cbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/custom_checkbox_new" />
+        <TextView android:textSize="13.0sp" android:id="@id/pay_detail_tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/pay_detail_tv_see_detail" android:layout_toRightOf="@id/pay_detail_cbox" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_color_1_0_0" android:id="@id/pay_detail_tv_see_detail" android:background="@drawable/btn_common_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="查看详情" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

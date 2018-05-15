@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.api.maps2d.MapView android:id="@id/rc_ext_amap" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rc_toolbar" android:background="#70000000" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="69.0dip">
+        <ImageView android:id="@id/rc_toolbar_close" android:paddingLeft="9.0dip" android:paddingTop="10.0dip" android:paddingRight="19.0dip" android:paddingBottom="19.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_real_time_location_exit" android:layout_alignParentLeft="true" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="40.0dip" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/rc_user_icons" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+        <ImageView android:id="@id/rc_toolbar_hide" android:paddingLeft="19.0dip" android:paddingTop="10.0dip" android:paddingRight="9.0dip" android:paddingBottom="19.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_real_time_location_hide" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/rc_user_text" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

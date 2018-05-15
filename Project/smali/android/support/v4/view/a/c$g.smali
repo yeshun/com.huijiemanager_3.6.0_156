@@ -1,0 +1,100 @@
+.class Landroid/support/v4/view/a/c$g;
+.super Landroid/support/v4/view/a/c$f;
+.source "AccessibilityNodeInfoCompat.java"
+
+
+# annotations
+.annotation build Landroid/support/annotation/ai;
+    a = 0x16
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/a/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "g"
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 1526
+    invoke-direct {p0}, Landroid/support/v4/view/a/c$f;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public A(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1545
+    invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->getTraversalAfter()Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public d(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;)V
+    .locals 0
+
+    .prologue
+    .line 1534
+    invoke-virtual {p1, p2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setTraversalBefore(Landroid/view/View;)V
+
+    .line 1535
+    return-void
+.end method
+
+.method public e(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;)V
+    .locals 0
+
+    .prologue
+    .line 1550
+    invoke-virtual {p1, p2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setTraversalAfter(Landroid/view/View;)V
+
+    .line 1551
+    return-void
+.end method
+
+.method public g(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;I)V
+    .locals 0
+
+    .prologue
+    .line 1540
+    invoke-virtual {p1, p2, p3}, Landroid/view/accessibility/AccessibilityNodeInfo;->setTraversalBefore(Landroid/view/View;I)V
+
+    .line 1541
+    return-void
+.end method
+
+.method public h(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;I)V
+    .locals 0
+
+    .prologue
+    .line 1556
+    invoke-virtual {p1, p2, p3}, Landroid/view/accessibility/AccessibilityNodeInfo;->setTraversalAfter(Landroid/view/View;I)V
+
+    .line 1557
+    return-void
+.end method
+
+.method public z(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1529
+    invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->getTraversalBefore()Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    move-result-object v0
+
+    return-object v0
+.end method

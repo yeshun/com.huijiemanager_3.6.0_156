@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/txt_add_loan_info" android:background="@drawable/bg_blue_corner" android:layout_width="130.0dip" android:layout_height="32.0dip" android:text="+ 添加贷款信息" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="你还没有添加客户相关贷款信息，快添加吧！" />
+</LinearLayout>

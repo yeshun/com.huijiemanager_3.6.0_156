@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_home_iou_rlayout_no_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/ic_v0_9_9_shouye_wuchuangtai" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginTop="24.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

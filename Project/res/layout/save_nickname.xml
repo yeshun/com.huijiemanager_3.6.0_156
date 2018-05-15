@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <com.huijiemanager.view.ClearEditText android:textSize="13.0sp" android:textColor="@color/text_dark1c" android:textColorHint="#ff999999" android:id="@id/et_nick" android:background="@null" android:layout_width="wrap_content" android:layout_height="48.0dip" android:hint="修改昵称" android:singleLine="true" android:maxLength="15" android:drawableLeft="@drawable/ic_1_0_zhuti_yonghuming_" android:drawablePadding="14.0dip" android:layout_weight="4.0" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

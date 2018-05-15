@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/all_titles" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="@color/text_dark1c" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="我的订单" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_tab" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginTop="48.0dip">
+        <RelativeLayout android:id="@id/tab_new" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="40.0dip" android:layout_toLeftOf="@id/tab_done">
+            <TextView android:textSize="14.0sp" android:textColor="@drawable/txt_grey_puple_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新订单" android:layout_centerVertical="true" />
+            <View android:background="@drawable/bg_tra_puple_select" android:layout_width="42.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tab_done" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:textColor="@drawable/txt_grey_puple_select" android:id="@id/txt_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已处理" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/image_done" android:layout_width="8.0dip" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/arrow_selector" android:layout_toRightOf="@id/txt_done" android:layout_centerVertical="true" />
+            <View android:background="@drawable/bg_tra_puple_select" android:layout_width="42.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tab_fav" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_toRightOf="@id/tab_done">
+            <TextView android:textSize="14.0sp" android:textColor="@drawable/txt_grey_puple_select" android:id="@id/txt_fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已收藏" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/image_fav" android:layout_width="8.0dip" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/arrow_selector" android:layout_toRightOf="@id/txt_fav" android:layout_centerVertical="true" />
+            <View android:background="@drawable/bg_tra_puple_select" android:layout_width="42.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewPager_tab" android:background="@color/text_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_tab" />
+    <LinearLayout android:id="@id/ll_filter" android:background="@color/float_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_tab" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_filter" android:background="@color/white_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_tab" />
+    </LinearLayout>
+</RelativeLayout>

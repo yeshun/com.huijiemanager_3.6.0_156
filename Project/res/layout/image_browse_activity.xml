@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tv_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rl_photo" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/photo_bt_exit" android:background="@drawable/bt_quxiao" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/photo_bt_del" android:background="@drawable/bt_shanchu" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

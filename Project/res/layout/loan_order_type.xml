@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@drawable/load_type_text_color" android:gravity="center" android:id="@id/txt_type_all" android:background="@drawable/loan_type_left_bg" android:layout_width="76.0dip" android:layout_height="24.0dip" android:text="全部订单" />
+    <TextView android:textSize="13.0sp" android:textColor="@drawable/load_type_text_color" android:gravity="center" android:id="@id/txt_type_do" android:background="@drawable/loan_type_right_bg" android:layout_width="76.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-1.0dip" android:text="可抢订单" />
+</LinearLayout>

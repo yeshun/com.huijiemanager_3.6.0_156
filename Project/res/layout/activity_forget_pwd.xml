@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_old_password" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="原密码:" android:layout_weight="1.0" />
+        <com.huijiemanager.view.ClearEditText android:textColorHint="@color/text_hint" android:id="@id/et_old_password" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="请输入6-20位长度的密码" android:maxLength="20" android:layout_weight="4.0" android:inputType="textPassword" style="@style/front_text" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_id" android:background="@color/text_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="新密码:" android:layout_weight="1.0" />
+        <com.huijiemanager.view.ClearEditText android:textColorHint="@color/text_hint" android:id="@id/et_new_password" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="请输入6-20位长度的密码" android:maxLength="20" android:layout_weight="4.0" android:inputType="textPassword" style="@style/front_text" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/new_password" android:background="@color/text_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确认密码:" android:layout_weight="1.0" />
+        <com.huijiemanager.view.ClearEditText android:textColorHint="@color/text_hint" android:id="@id/et_sure_new_password" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="请输入6-20位长度的确认密码" android:maxLength="20" android:layout_weight="4.0" android:inputType="textPassword" style="@style/front_text" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/forget_pwd_btn_ok" android:background="@drawable/bg_login" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="修改密码" />
+</LinearLayout>

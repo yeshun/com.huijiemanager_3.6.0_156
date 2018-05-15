@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/web_no_data" android:background="@color/grey_backgroud" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/not_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="点击我继续为您寻找丢失的网络" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rc_menu_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/rc_switch_to_keyboard" android:layout_width="53.0dip" android:layout_height="wrap_content" android:src="@drawable/rc_menu_keyboard_selector" android:scaleType="center" />
+        <View android:id="@id/rc_switch_divider" android:background="@color/rc_divider_line" android:layout_width="1.0px" android:layout_height="48.0dip" />
+    </LinearLayout>
+    <View android:background="@color/rc_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentTop="true" />
+</RelativeLayout>

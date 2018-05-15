@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/actionbar_rignt_listview_press" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_dark" android:id="@id/tv_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="取消" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/text_dark1c" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_dark" android:id="@id/tv_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="保存" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_dark1c" android:gravity="center_vertical" android:id="@id/tv_detail" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_write" android:background="@color/text_white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <EditText android:textSize="14.0dip" android:textColor="@color/text_dark1c" android:textColorHint="@color/grey_b" android:gravity="center" android:id="@id/ed_min_price" android:background="@color/grey_backgroud" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:hint="最低金额" android:inputType="numberDecimal" />
+        <View android:background="@color/text_red" android:layout_width="20.0dip" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+        <EditText android:textSize="14.0dip" android:textColor="@color/text_dark1c" android:textColorHint="@color/grey_b" android:gravity="center" android:id="@id/ed_max_price" android:background="@color/grey_backgroud" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:hint="最高金额" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <ListView android:id="@id/lv_push_detail" android:background="@color/text_white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+</LinearLayout>

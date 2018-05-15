@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/request_fail" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="加载失败了，别着急，再试一次！" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/txt_refresh_again" android:background="@drawable/network_refresh_bg" android:layout_width="106.0dip" android:layout_height="34.0dip" android:layout_marginTop="16.0dip" android:text="重新加载" />
+</LinearLayout>

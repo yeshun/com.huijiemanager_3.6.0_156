@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/discounts" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:id="@id/ll_main_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginLeft="75.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/hui" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image_top_line" android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/discountes" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0dip" android:textColor="@drawable/six_nine_color" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="惠借币充值满减券" />
+                        <TextView android:textSize="12.0dip" android:textColor="@drawable/nine_c_color" android:id="@id/txt_reach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="(满xx可用)" />
+                    </LinearLayout>
+                    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="13.0dip" android:textColor="@drawable/blue_nine_color" android:id="@id/txt_money_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+                            <TextView android:textSize="40.0sp" android:textColor="@drawable/blue_nine_color" android:id="@id/txt_cut_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="20.99" />
+                            <TextView android:textSize="13.0dip" android:textColor="@drawable/blue_nine_color" android:id="@id/txt_huijie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="惠借币" />
+                        </LinearLayout>
+                        <TextView android:textSize="11.0dip" android:textColor="@color/blue" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_use" android:background="@drawable/use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即使用" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:paddingLeft="-4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/discount_tag" />
+                    <View android:id="@id/dotted_line" android:background="@drawable/bg_dotted_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_centerVertical="true" android:layerType="software" />
+                    <ImageView android:paddingRight="-4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/discount_tag" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_up_down" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip">
+                    <TextView android:textSize="12.0dip" android:textColor="@drawable/nine_c_color" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2017.5.21-2017.5.18" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ffffa642" android:id="@id/txt_deadline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/txt_time" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/image_up_down" android:layout_width="12.0dip" android:layout_height="7.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/discount_up_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/image_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/discount_new" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_rules" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_below="@id/ll_main_content">
+            <TextView android:textSize="12.0dip" android:textColor="@drawable/nine_c_color" android:id="@id/txt_rule_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用限制：" />
+            <TextView android:textSize="12.0sp" android:textColor="@drawable/nine_c_color" android:id="@id/txt_rules" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

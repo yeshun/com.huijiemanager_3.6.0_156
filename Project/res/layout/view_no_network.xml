@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="349.0dip" android:layout_height="340.0dip" android:src="@drawable/no_network" android:scaleType="fitCenter" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_dark" android:id="@id/txt_go_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没网络啦！可能是您的网络设置未开启" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/txt_no_network_refresh" android:background="@drawable/network_refresh_bg" android:layout_width="106.0dip" android:layout_height="34.0dip" android:layout_marginTop="16.0dip" android:text="刷新" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/type_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/rc_picsel_pictype" />
+    <ImageView android:id="@id/type_image" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/rc_picsel_pictype_normal" />
+</view>

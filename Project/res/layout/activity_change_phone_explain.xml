@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/change_phone" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_dark1c" android:id="@id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="您当前的手机号为xxxxxxxxxxx" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="更换手机号后，认证状态、惠借币等信息不变，更换" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="后需使用新手机号登录，同一用户只" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="能够绑定一个手机号。" />
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/change_phone" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="24.0dip" android:text="更换手机号" android:layout_alignParentBottom="true" />
+</RelativeLayout>

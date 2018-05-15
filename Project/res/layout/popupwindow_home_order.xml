@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/result_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/home_order_bac" android:layout_width="270.0dip" android:layout_height="330.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/home_order_money" />
+            <TextView android:textSize="24.0dip" android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="恭喜你!" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/text_dark" android:gravity="center" android:id="@id/tv_order_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:text="获得抵扣券1张，抢单立即抵扣4个惠借币～" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/text_white" android:gravity="center" android:id="@id/tv_goto_coupon" android:background="@drawable/home_order_commit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="25.0dip" android:text="立即查看" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_order_coupon" android:padding="10.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/finishs" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

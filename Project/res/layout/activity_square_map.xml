@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_top_loc_hint" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/line" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_dark" android:id="@id/tv_top_loc_hint" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="无法获取位置信息,请开启定位服务" />
+        </LinearLayout>
+        <View android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/puple" android:gravity="center" android:id="@id/btn_off_loc_hint" android:background="@drawable/to_config_loc" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="14.0dip" android:scaleType="centerCrop" android:text="去设置" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_map_zone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.amap.api.maps.MapView android:id="@id/map_iou_square" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_loc_search_pointer" android:paddingBottom="80.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/tv_has_no_customer" android:background="@drawable/map_has_no_customer" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附近暂无贷款客户~" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white_background" android:gravity="center" android:id="@id/tv_search_hint" android:background="@drawable/search_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜周边" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_loc_search_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/loc_search_pointer" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_back_to_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/iv_back_to_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/back_to_location" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.huijiemanager.view.RippleImageView android:id="@id/rippleImageAnim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="300.0dip" app:show_spacing_time="1000" app:imageViewWidth="18.0dip" app:imageViewHeigth="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

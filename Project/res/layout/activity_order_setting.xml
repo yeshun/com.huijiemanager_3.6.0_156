@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:text="您可以根据自己的抢单习惯,自主设置以下选项：" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_select_order" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="13.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_dark1c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="默认抢单方式" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/ccc" android:id="@id/tv_select_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="买断" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ic_1_shezhi_zhiuti_jiantou" />
+    </LinearLayout>
+</LinearLayout>

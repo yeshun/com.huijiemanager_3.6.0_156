@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/contact_team" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="信贷家服务团队" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_weixin" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="36.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/contact_weixin" android:layout_weight="3.0" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="欢迎关注信贷家微信服务号联系我们，微信搜索“惠借信贷家”即可关注。" android:layout_weight="8.5" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/discount_right" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_youjian" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/contact_youjian" android:layout_weight="3.0" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="企业商务合作请联系邮箱：zhijun.jiang@huijie-inc.com" android:layout_weight="8.5" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/discount_right" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_kefu" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/contact_kefu" android:layout_weight="3.0" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="若遇到相关问题，欢迎咨询我们的客服。" android:layout_weight="8.5" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/discount_right" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

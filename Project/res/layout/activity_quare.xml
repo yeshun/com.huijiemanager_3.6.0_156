@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_square_frame" android:background="@color/grey_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/actionbar_rignt_listview_press" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@color/text_dark1c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信贷家" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/iv_left_address_filter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip">
+                <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/main_location" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_dark1c" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_left_current_address" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:maxLines="1" android:maxEms="3" />
+            </LinearLayout>
+            <ImageView android:id="@id/ll_right_map_square_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/square_type_map" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_right_sign_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="15.0dip" android:textColor="@color/tv_black" android:id="@id/tv_filtrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="筛选" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/blue" android:gravity="center" android:id="@id/tv_filtrate_num" android:background="@drawable/home_yuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="3" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <android.support.design.widget.TabLayout android:id="@id/sliding_tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tabMinWidth="90.0dip" />
+                    <ImageView android:id="@id/image_more" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="40.0dip" android:src="@drawable/order_more" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_more" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_more" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="全部标签" />
+                    <ImageView android:id="@id/iv_finish" android:padding="12.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/finish_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+                    <com.huijiemanager.view.MyGridView android:id="@id/gv_more" android:background="#ffffffff" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="3" />
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

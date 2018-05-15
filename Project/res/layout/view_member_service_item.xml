@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_member_service_item" android:background="@drawable/btn_common_white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_member_type_logo" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_noheader" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/text_dark" android:id="@id/tv_member_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="月卡会员" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/text_dark" android:gravity="bottom" android:id="@id/tv_member_daily_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="每日5单" />
+                            </LinearLayout>
+                            <TextView android:textSize="12.0sp" android:textColor="@color/text_dark" android:id="@id/tv_member_expired_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期30天" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格：" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:id="@id/tv_member_type_ori_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥1200" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/puple" android:id="@id/tv_member_type_new_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="¥299" />
+                                <ImageView android:id="@id/iv_member_type_tag" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:scaleType="center" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <Button android:textSize="12.0dip" android:textColor="@color/text_white" android:id="@id/btn_member_purchase" android:background="@drawable/manager_member_purchase" android:paddingLeft="20.0dip" android:paddingTop="4.0dip" android:paddingRight="20.0dip" android:paddingBottom="4.0dip" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="购买" android:layout_alignParentRight="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
