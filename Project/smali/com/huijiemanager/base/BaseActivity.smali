@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field protected ac:Lcom/huijiemanager/app/ApplicationController;
+.field public ac:Lcom/huijiemanager/app/ApplicationController;
 
 .field private networkHelper:Lcom/huijiemanager/http/NetworkHelper;
     .annotation system Ldalvik/annotation/Signature;

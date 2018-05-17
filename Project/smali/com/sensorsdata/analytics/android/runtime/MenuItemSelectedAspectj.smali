@@ -124,7 +124,7 @@
     .line 32
     const-string v0, "onMenuClick"
 
-    invoke-static {p1, v0, p2}, Lcom/sensorsdata/analytics/android/runtime/AopUtil;->sendTrackEventToSDK2(Lorg/a/b/c;Ljava/lang/String;I)V
+    #invoke-static {p1, v0, p2}, Lcom/sensorsdata/analytics/android/runtime/AopUtil;->sendTrackEventToSDK2(Lorg/a/b/c;Ljava/lang/String;I)V
 
     .line 33
     return-void
