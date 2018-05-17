@@ -22,7 +22,7 @@
 # instance fields
 .field private A:Landroid/view/Menu;
 
-.field private B:Ljava/lang/String;
+.field public B:Ljava/lang/String;
 
 .field private C:Lcom/huijiemanager/view/SweetAlert/SweetAlertDialog;
 
@@ -54,7 +54,7 @@
 
 .field private H:Lcom/huijiemanager/view/wheel/a/e;
 
-.field private I:Ljava/lang/Integer;
+.field public I:Ljava/lang/Integer;
 
 .field private J:Ljava/lang/String;
 
@@ -138,9 +138,9 @@
 
 .field private aW:Ljava/lang/String;
 
-.field private aX:Z
+.field public aX:Z
 
-.field private aY:Ljava/lang/String;
+.field public aY:Ljava/lang/String;
 
 .field private aZ:Ljava/lang/String;
 
@@ -209,7 +209,7 @@
 
 .field private bc:Ljava/lang/String;
 
-.field private d:Lcom/huijiemanager/http/response/PublicDetailResponse;
+.field public d:Lcom/huijiemanager/http/response/PublicDetailResponse;
 
 .field private e:Landroid/widget/TextView;
 

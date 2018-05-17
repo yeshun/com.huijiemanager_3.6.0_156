@@ -37,15 +37,15 @@
 # instance fields
 .field private i:Lcom/huijiemanager/view/SweetAlert/SweetAlertDialog;
 
-.field private j:Ljava/lang/String;
+.field public j:Ljava/lang/String;
 
-.field private k:Ljava/lang/String;
+.field public k:Ljava/lang/String;
 
-.field private l:I
+.field public l:I
 
-.field private m:I
+.field public m:I
 
-.field private n:Lcom/huijiemanager/http/response/QuareOrderTagsResponse;
+.field public n:Lcom/huijiemanager/http/response/QuareOrderTagsResponse;
 
 .field private o:Landroid/widget/ImageView;
 

@@ -39,7 +39,7 @@
 .end method
 
 .method constructor <init>(Lcom/huijiemanager/ui/activity/PublicDetailActivity;I)V
-    .locals 0
+    .locals 1
 
     .prologue
     .line 615
@@ -48,6 +48,8 @@
     iput p2, p0, Lcom/huijiemanager/ui/activity/PublicDetailActivity$20;->a:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    
+    iget v0, p0, Lcom/huijiemanager/ui/activity/PublicDetailActivity$20;->a:I
     move v0,v0
     .local v0, "tempIndex":I
 

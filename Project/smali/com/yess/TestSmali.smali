@@ -75,46 +75,46 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 26
+    .line 28
     const-string v0, "yess : "
 
     sput-object v0, Lcom/yess/TestSmali;->TAG:Ljava/lang/String;
 
-    .line 32
+    .line 34
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/yess/TestSmali;->startAgent:Z
 
-    .line 36
+    .line 38
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/yess/TestSmali;->rededOrders:Ljava/util/ArrayList;
 
-    .line 37
+    .line 39
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/yess/TestSmali;->allOrder:Ljava/util/ArrayList;
 
-    .line 38
+    .line 40
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/yess/TestSmali;->allPage:Ljava/util/HashMap;
 
-    .line 45
-    const/16 v0, 0x3e8
+    .line 47
+    const/16 v0, 0x64
 
     sput v0, Lcom/yess/TestSmali;->delayInterval:I
 
-    .line 297
+    .line 302
     sput-object v1, Lcom/yess/TestSmali;->_networkHelper:Lcom/huijiemanager/http/NetworkHelper;
 
-    .line 298
+    .line 303
     sput-object v1, Lcom/yess/TestSmali;->requestMap:Ljava/util/HashMap;
 
     return-void
@@ -124,7 +124,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -134,7 +134,7 @@
     .registers 4
 
     .prologue
-    .line 170
+    .line 172
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -149,7 +149,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 178
+    .line 180
     return-void
 .end method
 
@@ -158,25 +158,25 @@
     .param p0, "close"    # Landroid/view/MenuItem;
 
     .prologue
-    .line 50
+    .line 52
     sget-object v6, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
 
     if-nez v6, :cond_8
 
     if-eqz p0, :cond_8
 
-    .line 51
+    .line 53
     sput-object p0, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
 
-    .line 55
+    .line 57
     :cond_8
     const/4 v0, 0x0
 
-    .line 59
+    .line 61
     .local v0, "autoRequest":Z
     const/4 v2, 0x0
 
-    .line 60
+    .line 62
     .local v2, "beanUnRed":Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;
     sget-object v6, Lcom/yess/TestSmali;->allOrder:Ljava/util/ArrayList;
 
@@ -197,7 +197,7 @@
 
     check-cast v1, Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;
 
-    .line 61
+    .line 63
     .local v1, "bean":Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;
     sget-object v7, Lcom/yess/TestSmali;->rededOrders:Ljava/util/ArrayList;
 
@@ -215,15 +215,15 @@
 
     if-nez v7, :cond_10
 
-    .line 63
+    .line 65
     move-object v2, v1
 
-    .line 68
+    .line 70
     .end local v1    # "bean":Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;
     :cond_2d
-    if-eqz v2, :cond_ca
+    if-eqz v2, :cond_c8
 
-    .line 72
+    .line 74
     sget-object v6, Lcom/yess/TestSmali;->allPage:Ljava/util/HashMap;
 
     invoke-virtual {v6, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -234,12 +234,12 @@
 
     sput-object v6, Lcom/yess/TestSmali;->lastFragment:Lcom/huijiemanager/ui/fragment/PageFragment;
 
-    .line 73
+    .line 75
     sget-object v6, Lcom/yess/TestSmali;->lastFragment:Lcom/huijiemanager/ui/fragment/PageFragment;
 
-    if-eqz v6, :cond_c8
+    if-eqz v6, :cond_c6
 
-    .line 75
+    .line 77
     sget-object v6, Lcom/yess/TestSmali;->rededOrders:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;->getId()I
@@ -252,12 +252,12 @@
 
     invoke-virtual {v6, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 76
+    .line 78
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 77
+    .line 79
     .local v5, "parmeras":Ljava/lang/StringBuilder;
     invoke-virtual {v2}, Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;->getId()I
 
@@ -265,17 +265,17 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 78
+    .line 80
     const-string v6, ""
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 80
+    .line 82
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 82
+    .line 84
     .local v4, "parmera":Ljava/lang/String;
     new-instance v3, Landroid/content/Intent;
 
@@ -289,30 +289,30 @@
 
     invoke-direct {v3, v6, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 83
+    .line 85
     .local v3, "intent":Landroid/content/Intent;
     const-string v6, "id"
 
     invoke-virtual {v3, v6, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 85
+    .line 87
     sget-object v6, Lcom/yess/TestSmali;->lastFragment:Lcom/huijiemanager/ui/fragment/PageFragment;
 
     const/4 v7, 0x0
 
     invoke-virtual {v6, v3, v7}, Lcom/huijiemanager/ui/fragment/PageFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 87
+    .line 89
     sget-object v6, Lcom/yess/TestSmali;->allOrder:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v2}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 88
+    .line 90
     sget-object v6, Lcom/yess/TestSmali;->allPage:Ljava/util/HashMap;
 
     invoke-virtual {v6, v2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 90
+    .line 92
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -353,23 +353,23 @@
 
     invoke-static {v6}, Lcom/yess/TestSmali;->LogStr(Ljava/lang/String;)V
 
-    .line 97
+    .line 99
     .end local v3    # "intent":Landroid/content/Intent;
     .end local v4    # "parmera":Ljava/lang/String;
     .end local v5    # "parmeras":Ljava/lang/StringBuilder;
     :goto_ab
-    if-eqz v0, :cond_c7
+    if-eqz v0, :cond_c5
 
-    .line 100
+    .line 102
     sget-object v6, Lcom/yess/TestSmali;->_networkHelper:Lcom/huijiemanager/http/NetworkHelper;
 
-    if-eqz v6, :cond_c7
+    if-eqz v6, :cond_c5
 
     sget-object v6, Lcom/yess/TestSmali;->requestMap:Ljava/util/HashMap;
 
-    if-eqz v6, :cond_c7
+    if-eqz v6, :cond_c5
 
-    .line 102
+    .line 104
     new-instance v6, Landroid/os/Handler;
 
     invoke-direct {v6}, Landroid/os/Handler;-><init>()V
@@ -380,24 +380,22 @@
 
     sget v8, Lcom/yess/TestSmali;->delayInterval:I
 
-    add-int/lit16 v8, v8, -0x258
-
     int-to-long v8, v8
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 113
-    :cond_c7
+    .line 115
+    :cond_c5
     return-void
 
-    .line 92
-    :cond_c8
+    .line 94
+    :cond_c6
     const/4 v0, 0x1
 
     goto :goto_ab
 
-    .line 95
-    :cond_ca
+    .line 97
+    :cond_c8
     const/4 v0, 0x1
 
     goto :goto_ab
@@ -407,14 +405,14 @@
     .registers 8
 
     .prologue
-    .line 117
+    .line 119
     new-instance v1, Ljava/text/SimpleDateFormat;
 
     const-string v3, "yyyy\u5e74MM\u6708dd\u65e5   HH:mm:ss"
 
     invoke-direct {v1, v3}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    .line 118
+    .line 120
     .local v1, "formatter":Ljava/text/SimpleDateFormat;
     new-instance v0, Ljava/util/Date;
 
@@ -424,7 +422,7 @@
 
     invoke-direct {v0, v4, v5}, Ljava/util/Date;-><init>(J)V
 
-    .line 119
+    .line 121
     .local v0, "curDate":Ljava/util/Date;
     new-instance v2, Ljava/util/Date;
 
@@ -432,11 +430,11 @@
 
     const/4 v4, 0x5
 
-    const/16 v5, 0x12
+    const/16 v5, 0x11
 
     invoke-direct {v2, v3, v4, v5}, Ljava/util/Date;-><init>(III)V
 
-    .line 121
+    .line 123
     .local v2, "lockData":Ljava/util/Date;
     invoke-virtual {v2}, Ljava/util/Date;->getTime()J
 
@@ -466,450 +464,159 @@
     .param p0, "parmeras"    # Ljava/lang/String;
 
     .prologue
-    .line 29
+    .line 31
     sget-object v0, Lcom/yess/TestSmali;->TAG:Ljava/lang/String;
 
     invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 30
+    .line 32
     return-void
 .end method
 
 .method public static RecviceDetailBean(Lcom/huijiemanager/http/response/PublicDetailResponse;Lcom/huijiemanager/ui/activity/PublicDetailActivity;)V
-    .registers 16
+    .registers 10
     .param p0, "detailData"    # Lcom/huijiemanager/http/response/PublicDetailResponse;
     .param p1, "detailActivity"    # Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     .prologue
-    .line 182
-    sput-object p0, Lcom/yess/TestSmali;->currentData:Lcom/huijiemanager/http/response/PublicDetailResponse;
-
-    .line 184
-    sput-object p1, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
-
-    .line 186
-    const/4 v9, 0x6
-
-    new-array v1, v9, [Z
-
-    fill-array-data v1, :array_154
-
-    .line 189
-    .local v1, "allCondition":[Z
-    iget-object v9, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->city:Ljava/lang/String;
-
-    const-string v10, "\u91cd\u5e86"
-
-    invoke-virtual {v9, v10}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    .line 192
-    .local v3, "forward":Z
-    if-eqz v3, :cond_23
-
-    .line 194
-    iget-object v9, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->age:Ljava/lang/String;
-
-    invoke-static {v9}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v0
-
-    .line 195
-    .local v0, "ageVal":I
-    const/16 v9, 0x37
-
-    if-ge v0, v9, :cond_10f
-
-    const/16 v9, 0x1a
-
-    if-le v0, v9, :cond_10f
-
     const/4 v3, 0x1
 
-    .line 199
-    .end local v0    # "ageVal":I
-    :cond_23
-    :goto_23
-    iget-object v9, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->can_collect:Ljava/lang/String;
+    const/4 v4, 0x0
 
-    const-string v10, "1"
+    .line 184
+    sput-object p0, Lcom/yess/TestSmali;->currentData:Lcom/huijiemanager/http/response/PublicDetailResponse;
 
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 186
+    sput-object p1, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
-    move-result v9
+    .line 188
+    const/4 v5, 0x6
 
-    if-eqz v9, :cond_147
+    new-array v1, v5, [Z
 
-    iget-boolean v9, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->can_monopoly:Z
+    fill-array-data v1, :array_66
 
-    if-eqz v9, :cond_147
+    .line 191
+    .local v1, "allCondition":[Z
+    iget-object v5, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->city:Ljava/lang/String;
 
-    if-eqz v3, :cond_147
+    const-string v6, "\u4e0a\u6d77"
 
-    .line 201
-    iget-object v9, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->user_info_list:Ljava/util/ArrayList;
-
-    invoke-virtual {v9}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v9
-
-    :cond_39
-    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_112
-
-    invoke-interface {v9}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Lcom/huijiemanager/http/response/MyInforCreditResponse;
-
-    .line 207
-    .local v6, "response":Lcom/huijiemanager/http/response/MyInforCreditResponse;
-    invoke-virtual {v6}, Lcom/huijiemanager/http/response/MyInforCreditResponse;->getC_list()Ljava/util/ArrayList;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v10
-
-    :cond_4d
-    :goto_4d
-    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v11
-
-    if-eqz v11, :cond_39
-
-    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;
-
-    .line 209
-    .local v4, "info":Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_name()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u5fae\u7c92\u8d37"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_95
-
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_value()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u65e0"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_95
-
-    .line 211
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_value()Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 212
-    .local v8, "saylaStr":Ljava/lang/String;
-    const-string v11, "\u5143"
-
-    invoke-virtual {v8, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_85
-
-    .line 213
-    const-string v11, "\u5143"
-
-    const-string v12, ""
-
-    invoke-virtual {v8, v11, v12}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 214
-    :cond_85
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
-
-    move-result v7
-
-    .line 216
-    .local v7, "sayla":I
-    const/16 v11, 0x2710
-
-    if-lt v7, v11, :cond_95
-
-    .line 217
-    const/4 v11, 0x0
-
-    const/4 v12, 0x1
-
-    aput-boolean v12, v1, v11
-
-    .line 226
-    .end local v7    # "sayla":I
-    .end local v8    # "saylaStr":Ljava/lang/String;
-    :cond_95
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_name()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u540d\u4e0b\u623f\u4ea7"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_b1
-
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_value()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u6709\u623f\u4ea7\uff0c\u53ef\u63a5\u53d7\u62b5\u62bc"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_b1
-
-    .line 227
-    const/4 v11, 0x1
-
-    const/4 v12, 0x1
-
-    aput-boolean v12, v1, v11
-
-    .line 229
-    :cond_b1
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_name()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u540d\u4e0b\u8f66\u4ea7"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_cd
-
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_value()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u6709\u8f66\uff0c\u53ef\u63a5\u53d7\u62b5\u62bc"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_cd
-
-    .line 230
-    const/4 v11, 0x2
-
-    const/4 v12, 0x1
-
-    aput-boolean v12, v1, v11
-
-    .line 232
-    :cond_cd
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_name()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u516c\u79ef\u91d1\u57fa\u6570"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_f1
-
-    .line 234
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_value()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u5143"
-
-    const-string v13, ""
-
-    invoke-virtual {v11, v12, v13}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 235
-    .local v5, "numVal":Ljava/lang/String;
-    invoke-static {v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
-    .line 236
-    .local v2, "baseNum":I
-    const/16 v11, 0x1388
+    .line 201
+    .local v2, "forward":Z
+    if-eqz v2, :cond_25
 
-    if-lt v2, v11, :cond_f1
+    .line 203
+    iget-object v5, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->age:Ljava/lang/String;
 
-    .line 237
-    const/4 v11, 0x3
+    invoke-static {v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    const/4 v12, 0x1
+    move-result v0
 
-    aput-boolean v12, v1, v11
+    .line 204
+    .local v0, "ageVal":I
+    const/16 v5, 0x37
 
-    .line 244
-    .end local v2    # "baseNum":I
-    .end local v5    # "numVal":Ljava/lang/String;
-    :cond_f1
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_name()Ljava/lang/String;
+    if-ge v0, v5, :cond_4c
 
-    move-result-object v11
+    const/16 v5, 0x19
 
-    const-string v12, "\u4fe1\u7528\u8bb0\u5f55"
+    if-le v0, v5, :cond_4c
 
-    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move v2, v3
 
-    move-result v11
-
-    if-eqz v11, :cond_4d
-
-    invoke-virtual {v4}, Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;->getC_value()Ljava/lang/String;
-
-    move-result-object v11
-
-    const-string v12, "\u4fe1\u7528\u826f\u597d\uff0c\u65e0\u903e\u671f"
-
-    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_4d
-
-    .line 245
-    const/4 v11, 0x5
-
-    const/4 v12, 0x1
-
-    aput-boolean v12, v1, v11
-
-    goto/16 :goto_4d
-
-    .line 195
-    .end local v4    # "info":Lcom/huijiemanager/http/response/MyInforCreditResponse$InforDetail;
-    .end local v6    # "response":Lcom/huijiemanager/http/response/MyInforCreditResponse;
-    .restart local v0    # "ageVal":I
-    :cond_10f
-    const/4 v3, 0x0
-
-    goto/16 :goto_23
-
-    .line 264
+    .line 208
     .end local v0    # "ageVal":I
-    :cond_112
-    const/4 v9, 0x0
+    :cond_25
+    :goto_25
+    iget-object v5, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->can_collect:Ljava/lang/String;
 
-    aget-boolean v9, v1, v9
+    const-string v6, "1"
 
-    if-nez v9, :cond_126
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 v9, 0x3
+    move-result v5
 
-    aget-boolean v9, v1, v9
+    if-eqz v5, :cond_5a
 
-    if-nez v9, :cond_126
+    iget-boolean v5, p0, Lcom/huijiemanager/http/response/PublicDetailResponse;->can_monopoly:Z
 
-    const/4 v9, 0x1
+    if-eqz v5, :cond_5a
 
-    aget-boolean v9, v1, v9
+    if-eqz v2, :cond_5a
 
-    if-nez v9, :cond_126
+    .line 211
+    aput-boolean v3, v1, v4
 
-    const/4 v9, 0x2
+    .line 269
+    aget-boolean v3, v1, v4
 
-    aget-boolean v9, v1, v9
+    if-eqz v3, :cond_4e
 
-    if-eqz v9, :cond_13b
+    .line 271
+    new-instance v3, Landroid/os/Handler;
 
-    :cond_126
-    const/4 v9, 0x5
+    invoke-direct {v3}, Landroid/os/Handler;-><init>()V
 
-    aget-boolean v9, v1, v9
+    new-instance v4, Lcom/yess/TestSmali$3;
 
-    if-eqz v9, :cond_13b
+    invoke-direct {v4}, Lcom/yess/TestSmali$3;-><init>()V
 
-    .line 266
-    new-instance v9, Landroid/os/Handler;
+    sget v5, Lcom/yess/TestSmali;->delayInterval:I
 
-    invoke-direct {v9}, Landroid/os/Handler;-><init>()V
+    int-to-long v6, v5
 
-    new-instance v10, Lcom/yess/TestSmali$3;
+    invoke-virtual {v3, v4, v6, v7}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    invoke-direct {v10}, Lcom/yess/TestSmali$3;-><init>()V
-
-    const-wide/16 v12, 0x1
-
-    invoke-virtual {v9, v10, v12, v13}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 295
-    :cond_13a
-    :goto_13a
+    .line 300
+    :cond_4b
+    :goto_4b
     return-void
 
-    .line 281
-    :cond_13b
-    sget-object v9, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
+    .restart local v0    # "ageVal":I
+    :cond_4c
+    move v2, v4
 
-    if-eqz v9, :cond_13a
+    .line 204
+    goto :goto_25
 
-    sget-object v9, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
+    .line 286
+    .end local v0    # "ageVal":I
+    :cond_4e
+    sget-object v3, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
 
-    if-eqz v9, :cond_13a
+    if-eqz v3, :cond_4b
 
-    .line 284
-    invoke-static {}, Lcom/yess/TestSmali;->AutoCloseDetail()V
+    sget-object v3, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
-    goto :goto_13a
+    if-eqz v3, :cond_4b
 
     .line 289
-    :cond_147
-    sget-object v9, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
-
-    if-eqz v9, :cond_13a
-
-    sget-object v9, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
-
-    if-eqz v9, :cond_13a
-
-    .line 292
     invoke-static {}, Lcom/yess/TestSmali;->AutoCloseDetail()V
 
-    goto :goto_13a
+    goto :goto_4b
 
-    .line 186
-    nop
+    .line 294
+    :cond_5a
+    sget-object v3, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
 
-    :array_154
+    if-eqz v3, :cond_4b
+
+    sget-object v3, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
+
+    if-eqz v3, :cond_4b
+
+    .line 297
+    invoke-static {}, Lcom/yess/TestSmali;->AutoCloseDetail()V
+
+    goto :goto_4b
+
+    .line 188
+    :array_66
     .array-data 1
         0x0t
         0x0t
@@ -928,30 +635,30 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 127
+    .line 129
     invoke-static {}, Lcom/yess/TestSmali;->IsLock()Z
 
     move-result v3
 
     if-eqz v3, :cond_d
 
-    .line 129
+    .line 131
     const-string v3, "Locking"
 
     invoke-static {v3}, Lcom/yess/TestSmali;->LogStr(Ljava/lang/String;)V
 
-    .line 165
+    .line 167
     :cond_c
     :goto_c
     return-void
 
-    .line 133
+    .line 135
     :cond_d
     sget-boolean v3, Lcom/yess/TestSmali;->startAgent:Z
 
     if-nez v3, :cond_2c
 
-    .line 135
+    .line 137
     sget-object v3, Lcom/yess/TestSmali;->allOrder:Ljava/util/ArrayList;
 
     invoke-virtual {v3, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -960,12 +667,12 @@
 
     if-nez v3, :cond_1e
 
-    .line 136
+    .line 138
     sget-object v3, Lcom/yess/TestSmali;->allOrder:Ljava/util/ArrayList;
 
     invoke-virtual {v3, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 138
+    .line 140
     :cond_1e
     sget-object v3, Lcom/yess/TestSmali;->allPage:Ljava/util/HashMap;
 
@@ -975,18 +682,18 @@
 
     if-nez v3, :cond_c
 
-    .line 139
+    .line 141
     sget-object v3, Lcom/yess/TestSmali;->allPage:Ljava/util/HashMap;
 
     invoke-virtual {v3, p1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_c
 
-    .line 147
+    .line 149
     :cond_2c
     sput-object p0, Lcom/yess/TestSmali;->lastFragment:Lcom/huijiemanager/ui/fragment/PageFragment;
 
-    .line 148
+    .line 150
     sget-object v3, Lcom/yess/TestSmali;->rededOrders:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;->getId()I
@@ -1003,7 +710,7 @@
 
     if-nez v3, :cond_4b
 
-    .line 149
+    .line 151
     sget-object v3, Lcom/yess/TestSmali;->rededOrders:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;->getId()I
@@ -1016,16 +723,16 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 151
+    .line 153
     :cond_4b
     sput-boolean v5, Lcom/yess/TestSmali;->startAgent:Z
 
-    .line 152
+    .line 154
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 153
+    .line 155
     .local v2, "parmeras":Ljava/lang/StringBuilder;
     invoke-virtual {p1}, Lcom/huijiemanager/http/response/QuareOrderFiltrateResponse$OrdersBean;->getId()I
 
@@ -1033,17 +740,17 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 154
+    .line 156
     const-string v3, ""
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 156
+    .line 158
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 158
+    .line 160
     .local v1, "parmera":Ljava/lang/String;
     new-instance v0, Landroid/content/Intent;
 
@@ -1055,16 +762,16 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 159
+    .line 161
     .local v0, "intent":Landroid/content/Intent;
     const-string v3, "id"
 
     invoke-virtual {v0, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 161
+    .line 163
     invoke-virtual {p0, v0, v5}, Lcom/huijiemanager/ui/fragment/PageFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 163
+    .line 165
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1101,14 +808,14 @@
 
     const/4 v2, 0x0
 
-    .line 312
+    .line 317
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     sget-object v1, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
-    if-nez v1, :cond_8d
+    if-nez v1, :cond_98
 
     move v1, v6
 
@@ -1129,12 +836,12 @@
 
     invoke-static {v1}, Lcom/yess/TestSmali;->LogStr(Ljava/lang/String;)V
 
-    .line 314
+    .line 319
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 315
+    .line 320
     .local v0, "localHashMap":Ljava/util/HashMap;
     const-string v1, "default"
 
@@ -1148,7 +855,7 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 316
+    .line 321
     const-string v1, "order_price"
 
     sget-object v3, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
@@ -1157,12 +864,12 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 317
+    .line 322
     const-string v1, "xdj_discount_coupon"
 
     invoke-static {v1, v0}, Lcom/huijiemanager/utils/k;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 318
+    .line 323
     sget-object v1, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1171,12 +878,12 @@
 
     iput-object v3, v1, Lcom/huijiemanager/ui/activity/PublicDetailActivity;->I:Ljava/lang/Integer;
 
-    .line 321
+    .line 326
     new-instance v9, Ljava/util/HashMap;
 
     invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
 
-    .line 322
+    .line 327
     .local v9, "parmeraHashMap":Ljava/util/HashMap;
     const-string v1, "coupon_id"
 
@@ -1186,14 +893,14 @@
 
     invoke-virtual {v9, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 323
+    .line 328
     const-string v1, "method"
 
     const-string v3, "\u72ec\u4eab"
 
     invoke-virtual {v9, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 324
+    .line 329
     const-string v1, "coupon_usable"
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1202,12 +909,12 @@
 
     invoke-virtual {v9, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 325
+    .line 330
     const-string v1, "xdj_yhq_use"
 
     invoke-static {v1, v9}, Lcom/huijiemanager/utils/k;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 328
+    .line 333
     sget-object v1, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     iget-object v1, v1, Lcom/huijiemanager/ui/activity/PublicDetailActivity;->ac:Lcom/huijiemanager/app/ApplicationController;
@@ -1238,20 +945,34 @@
 
     invoke-virtual/range {v1 .. v8}, Lcom/huijiemanager/app/ApplicationController;->sendBuyLoanOrderRequest(Lcom/huijiemanager/http/NetworkHelper;Landroid/content/Context;JILjava/lang/Integer;Ljava/lang/String;)V
 
-    .line 331
+    .line 336
     const-string v1, "\u53d1\u9001\u786e\u8ba4\u62a2\u5355\u6d88\u606f"
 
     invoke-static {v1}, Lcom/yess/TestSmali;->LogStr(Ljava/lang/String;)V
 
-    .line 332
+    .line 338
+    sget-object v1, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
+
+    if-nez v1, :cond_94
+
+    sget-object v1, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
+
+    if-eqz v1, :cond_97
+
+    .line 339
+    :cond_94
+    invoke-static {}, Lcom/yess/TestSmali;->AutoCloseDetail()V
+
+    .line 340
+    :cond_97
     return-void
 
     .end local v0    # "localHashMap":Ljava/util/HashMap;
     .end local v9    # "parmeraHashMap":Ljava/util/HashMap;
-    :cond_8d
+    :cond_98
     move v1, v2
 
-    .line 312
+    .line 317
     goto/16 :goto_c
 .end method
 
@@ -1271,14 +992,14 @@
     .end annotation
 
     .prologue
-    .line 302
+    .line 307
     .local p0, "paramNetworkHelper":Lcom/huijiemanager/http/NetworkHelper;, "Lcom/huijiemanager/http/NetworkHelper<Lcom/huijiemanager/base/b;>;"
     sput-object p0, Lcom/yess/TestSmali;->_networkHelper:Lcom/huijiemanager/http/NetworkHelper;
 
-    .line 303
+    .line 308
     sput-object p1, Lcom/yess/TestSmali;->requestMap:Ljava/util/HashMap;
 
-    .line 304
+    .line 309
     return-void
 .end method
 
@@ -1287,7 +1008,7 @@
     .param p0, "detailActivitys"    # Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     .prologue
-    .line 336
+    .line 344
     sget-object v0, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
 
     if-eqz v0, :cond_8
@@ -1296,12 +1017,12 @@
 
     if-nez v0, :cond_9
 
-    .line 340
+    .line 348
     :cond_8
     :goto_8
     return-void
 
-    .line 339
+    .line 347
     :cond_9
     invoke-static {}, Lcom/yess/TestSmali;->AutoCloseDetail()V
 
@@ -1312,7 +1033,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     sget-object v0, Lcom/yess/TestSmali;->lastFragment:Lcom/huijiemanager/ui/fragment/PageFragment;
 
     return-object v0
@@ -1322,7 +1043,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     sget-object v0, Lcom/yess/TestSmali;->allOrder:Ljava/util/ArrayList;
 
     return-object v0
@@ -1332,7 +1053,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     sget-object v0, Lcom/yess/TestSmali;->allPage:Ljava/util/HashMap;
 
     return-object v0
@@ -1343,7 +1064,7 @@
     .param p0, "x0"    # Z
 
     .prologue
-    .line 24
+    .line 26
     sput-boolean p0, Lcom/yess/TestSmali;->startAgent:Z
 
     return p0
@@ -1353,7 +1074,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     sget-object v0, Lcom/yess/TestSmali;->detailClose:Landroid/view/MenuItem;
 
     return-object v0
@@ -1363,7 +1084,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     sget-object v0, Lcom/yess/TestSmali;->currentDetail:Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     return-object v0
@@ -1373,7 +1094,7 @@
     .registers 1
 
     .prologue
-    .line 24
+    .line 26
     sget-object v0, Lcom/yess/TestSmali;->currentData:Lcom/huijiemanager/http/response/PublicDetailResponse;
 
     return-object v0
