@@ -22,7 +22,7 @@
     .registers 1
 
     .prologue
-    .line 271
+    .line 275
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,12 +34,12 @@
     .registers 8
 
     .prologue
-    .line 273
+    .line 277
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 274
+    .line 278
     .local v0, "paramView":Ljava/util/HashMap;
     const-string v1, "order_id"
 
@@ -59,19 +59,19 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 275
+    .line 279
     const-string v1, "click"
 
     const-string v2, "\u9009\u62e9\u4e70\u65ad\u62a2\u5355"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 276
+    .line 280
     const-string v1, "xdj_loan_order_detail"
 
     invoke-static {v1, v0}, Lcom/huijiemanager/utils/k;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 278
+    .line 282
     const-string v1, "order_id"
 
     invoke-static {}, Lcom/yess/TestSmali;->access$600()Lcom/huijiemanager/http/response/PublicDetailResponse;
@@ -86,19 +86,19 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 279
+    .line 283
     const-string v1, "click"
 
     const-string v2, "\u7acb\u5373\u62a2\u5355"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 280
+    .line 284
     const-string v1, "xdj_loan_order_detail"
 
     invoke-static {v1, v0}, Lcom/huijiemanager/utils/k;->a(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 281
+    .line 285
     invoke-static {}, Lcom/yess/TestSmali;->access$500()Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     move-result-object v1
@@ -131,6 +131,6 @@
 
     invoke-virtual/range {v1 .. v6}, Lcom/huijiemanager/app/ApplicationController;->sendBuyLoanOrderFirstRequest(Lcom/huijiemanager/http/NetworkHelper;Landroid/content/Context;JI)V
 
-    .line 282
+    .line 286
     return-void
 .end method
