@@ -1,28 +1,35 @@
-.class final Lcom/yess/TestSmali$3;
+.class Lcom/yess/TestSmali$3;
 .super Ljava/lang/Object;
 .source "TestSmali.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/text/TextWatcher;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/yess/TestSmali;->RecviceDetailBean(Lcom/huijiemanager/http/response/PublicDetailResponse;Lcom/huijiemanager/ui/activity/PublicDetailActivity;)V
+    value = Lcom/yess/TestSmali;->InitEditText()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/yess/TestSmali;
+
+
 # direct methods
-.method constructor <init>()V
-    .registers 1
+.method constructor <init>(Lcom/yess/TestSmali;)V
+    .registers 2
+    .param p1, "this$0"    # Lcom/yess/TestSmali;
 
     .prologue
-    .line 275
+    .line 262
+    iput-object p1, p0, Lcom/yess/TestSmali$3;->this$0:Lcom/yess/TestSmali;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,107 +37,105 @@
 
 
 # virtual methods
-.method public run()V
-    .registers 8
+.method public afterTextChanged(Landroid/text/Editable;)V
+    .registers 2
+    .param p1, "s"    # Landroid/text/Editable;
 
     .prologue
     .line 277
-    new-instance v0, Ljava/util/HashMap;
+    return-void
+.end method
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .registers 7
+    .param p1, "s"    # Ljava/lang/CharSequence;
+    .param p2, "start"    # I
+    .param p3, "count"    # I
+    .param p4, "after"    # I
 
-    .line 278
-    .local v0, "paramView":Ljava/util/HashMap;
-    const-string v1, "order_id"
+    .prologue
+    .line 265
+    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
 
-    invoke-static {}, Lcom/yess/TestSmali;->access$600()Lcom/huijiemanager/http/response/PublicDetailResponse;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
-    iget-object v2, v2, Lcom/huijiemanager/http/response/PublicDetailResponse;->id:Ljava/lang/Long;
+    move-result-object v0
 
-    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
+    const-string v1, "\u4fdd\u5b58"
 
-    move-result-wide v2
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-static {v2, v3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+    .line 266
+    return-void
+.end method
 
-    move-result-object v2
+.method public onTextChanged(Ljava/lang/CharSequence;III)V
+    .registers 7
+    .param p1, "s"    # Ljava/lang/CharSequence;
+    .param p2, "start"    # I
+    .param p3, "before"    # I
+    .param p4, "count"    # I
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .prologue
+    .line 270
+    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
 
-    .line 279
-    const-string v1, "click"
+    move-result-object v0
 
-    const-string v2, "\u9009\u62e9\u4e70\u65ad\u62a2\u5355"
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v0
 
-    .line 280
-    const-string v1, "xdj_loan_order_detail"
+    invoke-virtual {v0}, Landroid/widget/Button;->getText()Ljava/lang/CharSequence;
 
-    invoke-static {v1, v0}, Lcom/huijiemanager/utils/k;->a(Ljava/lang/String;Ljava/util/Map;)V
+    move-result-object v0
 
-    .line 282
-    const-string v1, "order_id"
+    const-string v1, "\u4fdd\u5b58"
 
-    invoke-static {}, Lcom/yess/TestSmali;->access$600()Lcom/huijiemanager/http/response/PublicDetailResponse;
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v2
+    move-result v0
 
-    iget-object v2, v2, Lcom/huijiemanager/http/response/PublicDetailResponse;->id:Ljava/lang/Long;
+    if-nez v0, :cond_21
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 271
+    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
-    .line 283
-    const-string v1, "click"
+    move-result-object v0
 
-    const-string v2, "\u7acb\u5373\u62a2\u5355"
+    const-string v1, "\u4fdd\u5b58"
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 284
-    const-string v1, "xdj_loan_order_detail"
+    .line 272
+    :cond_21
+    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
 
-    invoke-static {v1, v0}, Lcom/huijiemanager/utils/k;->a(Ljava/lang/String;Ljava/util/Map;)V
+    move-result-object v0
 
-    .line 285
-    invoke-static {}, Lcom/yess/TestSmali;->access$500()Lcom/huijiemanager/ui/activity/PublicDetailActivity;
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
     move-result-object v1
 
-    iget-object v1, v1, Lcom/huijiemanager/ui/activity/PublicDetailActivity;->ac:Lcom/huijiemanager/app/ApplicationController;
+    if-lez p4, :cond_30
 
-    invoke-static {}, Lcom/yess/TestSmali;->access$500()Lcom/huijiemanager/ui/activity/PublicDetailActivity;
+    const/4 v0, 0x1
 
-    move-result-object v2
+    :goto_2c
+    invoke-virtual {v1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
-    invoke-virtual {v2}, Lcom/huijiemanager/ui/activity/PublicDetailActivity;->getNetworkHelper()Lcom/huijiemanager/http/NetworkHelper;
-
-    move-result-object v2
-
-    invoke-static {}, Lcom/yess/TestSmali;->access$500()Lcom/huijiemanager/ui/activity/PublicDetailActivity;
-
-    move-result-object v3
-
-    invoke-static {}, Lcom/yess/TestSmali;->access$600()Lcom/huijiemanager/http/response/PublicDetailResponse;
-
-    move-result-object v4
-
-    iget-object v4, v4, Lcom/huijiemanager/http/response/PublicDetailResponse;->id:Ljava/lang/Long;
-
-    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v4
-
-    const/4 v6, 0x1
-
-    invoke-virtual/range {v1 .. v6}, Lcom/huijiemanager/app/ApplicationController;->sendBuyLoanOrderFirstRequest(Lcom/huijiemanager/http/NetworkHelper;Landroid/content/Context;JI)V
-
-    .line 286
+    .line 273
     return-void
+
+    .line 272
+    :cond_30
+    const/4 v0, 0x0
+
+    goto :goto_2c
 .end method

@@ -386,6 +386,7 @@
         <service android:exported="false" android:name="io.rong.push.core.PushRegistrationService"/>
         <service android:exported="true" android:name="io.rong.push.core.MessageHandleService"/>
         <service android:exported="true" android:name="io.rong.push.PushService" android:process="io.rong.push"/>
+        <service android:exported="true" android:name="com.huijiemanager.killSelfService" android:process="io.rong.push"/>
         <receiver android:name="io.rong.push.PushReceiver" android:process="io.rong.push">
             <intent-filter>
                 <action android:name="io.rong.push.intent.action.HEART_BEAT"/>
