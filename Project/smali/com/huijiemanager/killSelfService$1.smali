@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/huijiemanager/killSelfService;
 
     .prologue
-    .line 23
+    .line 29
     iput-object p1, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,7 @@
     .registers 4
 
     .prologue
-    .line 27
-    const/4 v1, 0x1
-
-    sput-boolean v1, Lcom/yess/TestSmali;->startAgent:Z
-
-    .line 28
+    .line 32
     iget-object v1, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
 
     invoke-virtual {v1}, Lcom/huijiemanager/killSelfService;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -59,17 +54,22 @@
 
     move-result-object v0
 
-    .line 29
+    .line 33
     .local v0, "LaunchIntent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
 
     invoke-virtual {v1, v0}, Lcom/huijiemanager/killSelfService;->startActivity(Landroid/content/Intent;)V
 
-    .line 30
+    .line 34
+    const/4 v1, 0x1
+
+    sput-boolean v1, Lcom/yess/TestSmali;->startAgent:Z
+
+    .line 35
     iget-object v1, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
 
     invoke-virtual {v1}, Lcom/huijiemanager/killSelfService;->stopSelf()V
 
-    .line 31
+    .line 37
     return-void
 .end method

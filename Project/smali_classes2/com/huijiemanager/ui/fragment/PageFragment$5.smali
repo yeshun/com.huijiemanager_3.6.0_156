@@ -257,7 +257,7 @@
 
     sget-object v1, Lcom/huijiemanager/utils/an;->b:Lcom/d/a/b/c;
 
-    invoke-virtual {v0, p1, p2, v1}, Lcom/d/a/b/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/d/a/b/c;)V
+    #Yess引起内存溢出invoke-virtual {v0, p1, p2, v1}, Lcom/d/a/b/d;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/d/a/b/c;)V
 
     .line 310
     return-void

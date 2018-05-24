@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/yess/TestSmali;
 
     .prologue
-    .line 262
+    .line 276
     iput-object p1, p0, Lcom/yess/TestSmali$3;->this$0:Lcom/yess/TestSmali;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "s"    # Landroid/text/Editable;
 
     .prologue
-    .line 277
+    .line 291
     return-void
 .end method
 
@@ -54,12 +54,10 @@
     .param p4, "after"    # I
 
     .prologue
-    .line 265
-    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
+    .line 279
+    sget-object v0, Lcom/yess/TestSmali;->instance:Lcom/yess/TestSmali;
 
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$300(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
     move-result-object v0
 
@@ -67,7 +65,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 266
+    .line 280
     return-void
 .end method
 
@@ -79,12 +77,10 @@
     .param p4, "count"    # I
 
     .prologue
-    .line 270
-    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
+    .line 284
+    sget-object v0, Lcom/yess/TestSmali;->instance:Lcom/yess/TestSmali;
 
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$300(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
     move-result-object v0
 
@@ -98,14 +94,12 @@
 
     move-result v0
 
-    if-nez v0, :cond_21
+    if-nez v0, :cond_1d
 
-    .line 271
-    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
+    .line 285
+    sget-object v0, Lcom/yess/TestSmali;->instance:Lcom/yess/TestSmali;
 
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$300(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
     move-result-object v0
 
@@ -113,29 +107,27 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 272
-    :cond_21
-    invoke-static {}, Lcom/yess/TestSmali;->access$300()Lcom/yess/TestSmali;
+    .line 286
+    :cond_1d
+    sget-object v0, Lcom/yess/TestSmali;->instance:Lcom/yess/TestSmali;
 
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/yess/TestSmali;->access$400(Lcom/yess/TestSmali;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/yess/TestSmali;->access$300(Lcom/yess/TestSmali;)Landroid/widget/Button;
 
     move-result-object v1
 
-    if-lez p4, :cond_30
+    if-lez p4, :cond_2a
 
     const/4 v0, 0x1
 
-    :goto_2c
+    :goto_26
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 273
+    .line 287
     return-void
 
-    .line 272
-    :cond_30
+    .line 286
+    :cond_2a
     const/4 v0, 0x0
 
-    goto :goto_2c
+    goto :goto_26
 .end method

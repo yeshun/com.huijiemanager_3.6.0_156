@@ -22,7 +22,7 @@
     .registers 1
 
     .prologue
-    .line 327
+    .line 341
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,27 +34,27 @@
     .registers 3
 
     .prologue
-    .line 329
-    invoke-static {}, Lcom/yess/TestSmali;->access$800()Lcom/huijiemanager/ui/activity/PublicDetailActivity;
+    .line 343
+    invoke-static {}, Lcom/yess/TestSmali;->access$700()Lcom/huijiemanager/ui/activity/PublicDetailActivity;
 
     move-result-object v0
 
-    invoke-static {}, Lcom/yess/TestSmali;->access$700()Landroid/view/MenuItem;
+    invoke-static {}, Lcom/yess/TestSmali;->access$600()Landroid/view/MenuItem;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/huijiemanager/ui/activity/PublicDetailActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
-    .line 331
+    .line 345
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/Runtime;->gc()V
 
-    .line 332
+    .line 346
     invoke-static {}, Ljava/lang/System;->runFinalization()V
 
-    .line 333
+    .line 347
     return-void
 .end method

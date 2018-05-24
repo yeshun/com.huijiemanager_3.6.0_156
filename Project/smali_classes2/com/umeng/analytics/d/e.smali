@@ -110,7 +110,7 @@
     .line 37
     iget-object v0, p0, Lcom/umeng/analytics/d/e;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    #Yess引起内存溢出invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     .line 39
     :cond_0
