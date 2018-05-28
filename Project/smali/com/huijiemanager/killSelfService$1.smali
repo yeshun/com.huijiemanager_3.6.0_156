@@ -38,9 +38,11 @@
 
 # virtual methods
 .method public run()V
-    .registers 4
+    .registers 5
 
     .prologue
+    const/4 v3, 0x1
+
     .line 32
     iget-object v1, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
 
@@ -48,7 +50,11 @@
 
     move-result-object v1
 
-    const-string v2, "com.huijiemanager"
+    iget-object v2, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
+
+    invoke-static {v2}, Lcom/huijiemanager/killSelfService;->access$000(Lcom/huijiemanager/killSelfService;)Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -61,15 +67,16 @@
     invoke-virtual {v1, v0}, Lcom/huijiemanager/killSelfService;->startActivity(Landroid/content/Intent;)V
 
     .line 34
-    const/4 v1, 0x1
-
-    sput-boolean v1, Lcom/yess/TestSmali;->startAgent:Z
+    sput-boolean v3, Lcom/yess/TestSmali;->startAgent:Z
 
     .line 35
+    sput-boolean v3, Lcom/yess/TestSmali;->autoCheck:Z
+
+    .line 36
     iget-object v1, p0, Lcom/huijiemanager/killSelfService$1;->this$0:Lcom/huijiemanager/killSelfService;
 
     invoke-virtual {v1}, Lcom/huijiemanager/killSelfService;->stopSelf()V
 
-    .line 37
+    .line 38
     return-void
 .end method

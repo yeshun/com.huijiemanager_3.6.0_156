@@ -30,6 +30,17 @@
     return-void
 .end method
 
+.method static synthetic access$000(Lcom/huijiemanager/killSelfService;)Ljava/lang/String;
+    .registers 2
+    .param p0, "x0"    # Lcom/huijiemanager/killSelfService;
+
+    .prologue
+    .line 12
+    iget-object v0, p0, Lcom/huijiemanager/killSelfService;->PackageName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
@@ -37,7 +48,7 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 44
+    .line 45
     const/4 v0, 0x0
 
     return-object v0
@@ -50,6 +61,15 @@
     .param p3, "startId"    # I
 
     .prologue
+    .line 26
+    const-string v0, "PackageName"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/huijiemanager/killSelfService;->PackageName:Ljava/lang/String;
+
     .line 28
     sget-object v0, Lcom/yess/TestSmali;->instance:Lcom/yess/TestSmali;
 
@@ -66,7 +86,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 39
+    .line 40
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
     move-result v0
